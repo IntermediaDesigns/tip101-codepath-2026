@@ -6,7 +6,14 @@
 
 
 def get_last(lst):
-    pass
+    if len(lst) == 0:
+        return None
+    else:
+        return lst[-1]
+    
+# Write your solution here!
+result = get_last([3, 1, 6, 7, 5])
+print(result)
 
 
 # Example Input: [3, 1, 6, 7, 5]

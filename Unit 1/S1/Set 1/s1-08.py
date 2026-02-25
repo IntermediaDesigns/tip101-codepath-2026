@@ -9,7 +9,14 @@
 
 
 def blackjack(score):
-    pass
+    if score == 21:
+        print("Blackjack!")
+    elif score > 21:
+        print("Bust!")
+    elif score >= 17:
+        print("Nice hand!")
+    else:
+        print("Hit me!")
 
 
 blackjack(21)

@@ -5,7 +5,11 @@
 
 
 def product(a, b):
-    pass
+    return a * b
+
+# Write your solution here!
+result = product(22, 7)
+print(result)
 
 
 # Example Input: 22 and 7

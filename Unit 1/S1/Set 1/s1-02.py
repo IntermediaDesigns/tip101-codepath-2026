@@ -6,7 +6,7 @@
 
 
 def todays_mood():
-    mood = "😎"
+    mood = "😜"
     print("Today's mood: " + mood)
 
 

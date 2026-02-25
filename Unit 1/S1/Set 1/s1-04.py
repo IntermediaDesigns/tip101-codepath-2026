@@ -11,8 +11,12 @@
 def sum(a, b):
     return a + b
 
-
 # Write your solution here!
+result = sum(13, 27)
+doubled_result = sum(result, result)
+
+print(doubled_result)
+
 
 # Example Input: 13 and 27
 # Example Output: 80

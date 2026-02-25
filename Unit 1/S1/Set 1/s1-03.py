@@ -10,6 +10,7 @@ def print_menu(menu):
 
 
 # Add your function call here!
+print_menu("🍕")
 
 # Example Output: Lunch today is: 🍕
 #

@@ -8,8 +8,14 @@
 
 
 def get_first(lst):
-    pass
+    if len(lst) == 0:
+        return None
+    else:
+        return lst[0]
 
+# Write your solution here!
+result = get_first([3, 1, 6, 7, 5])
+print(result)
 
 # Example Input: [3, 1, 6, 7, 5]
 # Example Output: 3

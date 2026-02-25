@@ -6,7 +6,10 @@
 
 
 def classify_age(age):
-    pass
+    if age < 18:
+        return "child"
+    else:
+        return "adult"
 
 
 output = classify_age(18)
