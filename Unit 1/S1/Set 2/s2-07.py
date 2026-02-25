@@ -15,6 +15,15 @@
 
 
 # Write your ordered solution here!
+def halve_lst(lst):
+    result = []
+    for number in lst:
+        halved = number / 2
+        result.append(halved)
+    return result
+
+print([int(x) for x in halve_lst([2, 4, 6, 8])])
+
 
 # Example Output: [1, 2, 3, 4]
 #

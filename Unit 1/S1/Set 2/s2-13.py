@@ -6,7 +6,14 @@
 
 
 def squares(nums):
-    pass
+    result = []
+    for num in nums:
+        result.append(num ** 2)
+    return result
+
+nums = [1, 2, 3, 4]
+squared_nums = squares(nums)
+print(squared_nums)
 
 
 # Example Input: [1, 2, 3, 4]

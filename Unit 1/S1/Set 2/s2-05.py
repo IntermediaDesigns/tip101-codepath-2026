@@ -10,7 +10,14 @@
 
 
 def calculate_tip(bill, service_quality):
-    pass
+    if service_quality == "poor":
+        return bill * 0.1
+    elif service_quality == "average":
+        return bill * 0.15
+    elif service_quality == "excellent":
+        return bill * 0.2
+    else:
+        return None
 
 
 tip1 = calculate_tip(44.53, "average")

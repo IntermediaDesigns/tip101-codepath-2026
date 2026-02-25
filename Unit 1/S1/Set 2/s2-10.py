@@ -6,7 +6,10 @@
 
 
 def power(base, exponent):
-    pass
+    result = 1
+    for _ in range(exponent):
+        result *= base
+    return result
 
 
 pow1 = power(2, 5)

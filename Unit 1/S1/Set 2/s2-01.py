@@ -8,7 +8,10 @@
 
 
 def greet_user(name):
-    pass
+    print("Hello " + name)
+
+greet_user("Michael")
+
 
 
 # Example Input: Michael

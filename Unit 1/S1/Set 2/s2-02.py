@@ -6,7 +6,7 @@
 
 
 def difference(a, b):
-    pass
+    return a - b
 
 
 diff = difference(8, 3)

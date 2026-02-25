@@ -6,7 +6,10 @@
 
 
 def list_length(lst):
-    pass
+    count = 0
+    for _ in lst:
+        count += 1
+    return count
 
 
 lst = [2, 4, 6, 8, 10]

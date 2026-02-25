@@ -6,7 +6,10 @@
 
 
 def sum_positive_range(stop):
-    pass
+    total = 0
+    for i in range(1, stop + 1):
+        total += i
+    return total
 
 
 total = sum_positive_range(6)

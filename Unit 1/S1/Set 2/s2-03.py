@@ -8,8 +8,16 @@
 
 
 def concatenate_list(nums):
-    pass
+    ans = []
+    for i in range(len(nums)):
+        ans.append(nums[i])
+    for i in range(len(nums)):
+        ans.append(nums[i])
+    return ans
 
+nums = [1, 2, 3, 4]
+result = concatenate_list(nums)
+print(result)
 
 # Example Input: [1, 2, 3, 4]
 # Example Output: [1, 2, 3, 4, 1, 2, 3, 4]

@@ -6,7 +6,9 @@
 
 
 def print_negatives(lst):
-    pass
+    for num in lst:
+        if num < 0:
+            print(num)
 
 
 print_negatives([3, -2, 2, 1, -5])
