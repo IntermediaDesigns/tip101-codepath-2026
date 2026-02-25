@@ -1,0 +1,26 @@
+# ------------------------------------------------
+#  *                    Problem 8: Blackjack
+#
+#    Write a function called blackjack() that takes an integer score as a parameter.
+#    If score equals 21, print "Blackjack!".
+#    If score is greater than 21, print "Bust!".
+#    If score is greater than or equal to 17 and less than 21, print "Nice hand!".
+#    If score is less than 17, print "Hit me!".
+
+
+def blackjack(score):
+    pass
+
+
+blackjack(21)
+blackjack(24)
+blackjack(19)
+blackjack(10)
+
+# Example Output:
+# Blackjack!
+# Bust!
+# Nice hand!
+# Hit me!
+#
+# ------------------------------------------------
