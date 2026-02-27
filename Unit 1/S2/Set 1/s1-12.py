@@ -7,7 +7,10 @@
 
 
 def linear_search(lst, target):
-    pass
+    for i in range(len(lst)):
+        if lst[i] == target:
+            return i
+    return -1
 
 
 lst = [1, 4, 5, 2, 8]

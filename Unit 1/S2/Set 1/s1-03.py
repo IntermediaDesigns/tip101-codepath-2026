@@ -6,8 +6,11 @@
 
 
 def doubled(lst):
-    pass
-
+    doubledList = []
+    for items in lst:
+        doubledList.append(items * 2)
+        
+    return doubledList
 
 lst = [1, 2, 3]
 new_lst = doubled(lst)

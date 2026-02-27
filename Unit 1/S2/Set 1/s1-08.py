@@ -6,10 +6,12 @@
 
 
 def multiples_of_five():
-    pass
+    for i in range(1, 101): # add 1 to 101 because the range function does not include the end value
+        if i % 5 == 0:
+            print(i)
 
 
-multiples_of_five()
+multiples_of_five() # call the function to print the multiples of 5
 
 # Example Output:
 # 5

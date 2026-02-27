@@ -6,7 +6,8 @@
 
 
 def doubled(lst):
-    pass
+    for items in lst:
+        print(items * 2)
 
 
 lst = [1, 2, 3]

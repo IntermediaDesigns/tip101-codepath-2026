@@ -7,7 +7,12 @@
 
 
 def count_less_than(numbers, threshold):
-    pass
+    counter = 0
+    for items in numbers:
+        if items < threshold:
+            counter += 1
+            
+    return counter
 
 
 numbers = [12, 8, 2, 4, 4, 10]

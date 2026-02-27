@@ -6,7 +6,12 @@
 
 
 def find_divisors(n):
-    pass
+    divisors = []
+    for i in range(1, n + 1): # add 1 to n because the range function does not include the end value
+        if n % i == 0:
+            divisors.append(i)
+            
+    return divisors
 
 
 lst = find_divisors(6)

@@ -6,7 +6,12 @@
 
 
 def get_evens(lst):
-    pass
+    evens = []
+    for items in lst:
+        if items % 2 == 0:
+            evens.append(items)
+            
+    return evens
 
 
 lst = [1, 2, 3, 4]

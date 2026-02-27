@@ -6,7 +6,16 @@
 
 
 def max_difference(lst):
-    pass
+    maxValue = lst[0]
+    minValue = lst[0]
+    
+    for items in lst:
+        if items > maxValue:
+            maxValue = items
+        elif items < minValue:
+            minValue = items
+            
+    return maxValue - minValue
 
 
 lst = [5, 22, 8, 10, 2]

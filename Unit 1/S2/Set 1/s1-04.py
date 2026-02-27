@@ -6,7 +6,11 @@
 
 
 def flip_sign(lst):
-    pass
+    flippedList = []
+    for items in lst:
+        flippedList.append(items * -1)
+        
+    return flippedList
 
 
 lst = [1, -2, -3, 4]

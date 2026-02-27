@@ -6,7 +6,8 @@
 
 
 def print_list(lst):
-    pass
+    for items in lst:
+        print(items)
 
 
 lst = ["squirtle", "gengar", "charizard", "pikachu"]

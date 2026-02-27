@@ -7,7 +7,10 @@
 
 
 def print_indices(lst):
-    pass
+    for i in range(len(lst)): # Loop through the indices of the list using range and len
+        print(i)
+        
+
 
 
 lst = [5, 1, 3, 8, 2]
