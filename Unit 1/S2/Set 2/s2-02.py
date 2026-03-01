@@ -6,7 +6,10 @@
 
 
 def average(scores):
-    pass
+    # score = 0
+    # for s in scores:
+    #     score += s
+    # return score / len(scores)
 
 
 scores = [84, 73, 92, 95, 88]
@@ -16,3 +19,4 @@ print(avg_score)
 # Example Output: 86.4
 #
 # ------------------------------------------------
+

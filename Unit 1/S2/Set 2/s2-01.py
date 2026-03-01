@@ -10,7 +10,10 @@
 
 
 def convertTemp(celsius):
-    pass
+    # kelvin = celsius + 273.15
+    # fahrenheit = celsius * 1.80 + 32.00
+    # ans = [kelvin, fahrenheit]
+    # return ans
 
 
 temperatures = convertTemp(23.00)
@@ -20,3 +23,5 @@ print(temperatures)
 # [296.15, 73.40]
 #
 # ------------------------------------------------
+
+
