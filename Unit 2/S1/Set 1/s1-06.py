@@ -10,7 +10,8 @@
 
 
 def calculate_gpa(report_card):
-    pass
+    gradePoint = {"A" : 4, "B" : 3, "C" : 2, "D" : 1, "F" : 0}
+    
 
 
 report_card = {"Math": "A", "Science": "C", "History": "A", "Art": "B", "English": "B", "PE": "A"}

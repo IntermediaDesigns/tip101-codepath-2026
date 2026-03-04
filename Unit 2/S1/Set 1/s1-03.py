@@ -8,7 +8,12 @@
 
 
 def print_pair(dictionary, target):
-    pass
+    if target in dictionary:
+        print("Key: ", target)
+        print("Value: ", dictionary[target])
+    else:
+        print("That pair does not exist!")
+
 
 
 dictionary = {"spongebob": "squarepants", "patrick": "star", "squidward": "tentacles"}

@@ -10,8 +10,16 @@
 
 
 def restock_inventory(current_inventory, restock_list):
-    pass
-
+    #Loop through restock_list
+    for item in restock_list:
+    #Check if item is not in current_inventory, it should be added.
+        if item not in current_inventory:
+            current_inventory[item] = restock_list[item]
+    #Check if the item is in current_inventory, add quantity to the current_inventory
+        else:
+            current_inventory[item] += restock_list[item]
+    #Return the updated current_inventory dictionary
+    return current_inventory
 
 current_inventory = {
     "apples": 30,

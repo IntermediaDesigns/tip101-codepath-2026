@@ -10,8 +10,19 @@
 
 
 def keys_v_values(dictionary):
-    pass
-
+    keySum = 0
+    valSum = 0
+    
+    for i in dictionary:
+        keySum += i
+        valSum += dictionary[i]
+        
+    if keySum > valSum:
+        return "keys"
+    elif valSum > keySum:
+        return "values"
+    else:
+        return "balanced"
 
 dictionary1 = {1: 10, 2: 20, 3: 30, 4: 40, 5: 50, 6: 60}
 greater_sum = keys_v_values(dictionary1)

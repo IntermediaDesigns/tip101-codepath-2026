@@ -9,7 +9,16 @@
 
 
 def create_dictionary(keys, values):
-    pass
+    #Create empty dictionary
+    myDict = {}
+    #Loop though each element
+    for i in range(len(keys)):
+
+    #Add the key and value to dictionary
+        myDict[keys[i]] = values[i]
+
+    #Return the dictionary
+    return myDict
 
 
 keys = ['peanut', 'dragon', 'star', 'pop', 'space']

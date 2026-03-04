@@ -7,7 +7,15 @@
 
 
 def all_in(a, b):
-    pass
+    
+# Loop through each element in list a and check if it is in list b
+    for items in a:
+# Check if in list b
+        if items not in b:
+# If its not in b then return False
+            return False
+# if its true then return True
+    return True
 
 
 lst_1 = [1, 2]
@@ -20,3 +28,4 @@ print(all_in(lst_2, lst_1))
 # False
 #
 # ------------------------------------------------
+
