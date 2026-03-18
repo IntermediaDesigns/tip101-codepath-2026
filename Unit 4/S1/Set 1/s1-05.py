@@ -8,7 +8,19 @@
 
 
 def first_palindrome(words):
-    pass
+    for word in words:
+        left = 0
+        right = len(word) - 1
+        is_palindrome = True
+        while left < right:
+            if word[left] != word[right]:
+                is_palindrome = False
+                break
+            left += 1
+            right -= 1
+        if is_palindrome:
+            return word
+    return ""
 
 
 words = ["abc", "car", "ada", "racecar", "cool"]
