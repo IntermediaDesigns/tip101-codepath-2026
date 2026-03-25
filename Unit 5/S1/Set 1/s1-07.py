@@ -34,7 +34,11 @@ class Pokemon:
 
 
 def get_by_type(my_pokemon, pokemon_type):
-    pass
+    pokemon_of_type = []
+    for pokemon in my_pokemon:
+        if pokemon_type in pokemon.types:
+            pokemon_of_type.append(pokemon.name)
+    return pokemon_of_type
 
 
 jigglypuff = Pokemon("Jigglypuff", ["Normal", "Fairy"])

@@ -14,7 +14,13 @@ class Node:
 
 
 def print_linked_list(head):
-    pass
+    current_node = head
+    while current_node is not None:
+        print(current_node.value, end="")
+        if current_node.next is not None:
+            print(" -> ", end="")
+        current_node = current_node.next
+    print()  # for a new line after printing the linked list
 
 
 # Build input linked list: a -> b -> c -> d -> e

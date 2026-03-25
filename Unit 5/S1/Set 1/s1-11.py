@@ -14,10 +14,15 @@ class Node:
 
 
 # Create your linked list here
-node_1 = None  # Replace with your code
-node_2 = None
-node_3 = None
-node_4 = None
+node_1 = Node("Mario")  # Replace with your code
+node_2 = Node("Luigi")
+node_3 = Node("Wario")
+node_4 = Node("Toad")
+
+# Link the nodes
+node_1.next = node_2
+node_2.next = node_3
+node_3.next = node_4
 
 print(node_1.value, "->", node_1.next.value)
 print(node_2.value, "->", node_2.next.value)

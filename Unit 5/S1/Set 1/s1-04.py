@@ -20,7 +20,8 @@ class Pokemon:
         })
 
     def catch(self):
-        pass
+        self.is_caught = True
+        
 
 
 my_pokemon = Pokemon("rattata", ["Normal"])

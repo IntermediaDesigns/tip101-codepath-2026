@@ -21,8 +21,11 @@ class Pokemon:
         })
 
 
-squirtle = None  # Replace with your code
+squirtle = Pokemon("Squirtle", ["Water"])  # Replace with your code
 # squirtle.print_pokemon()  # Uncomment after instantiating
+print(squirtle.name)  # Should print "Squirtle"
+print(squirtle.types)  # Should print ["Water"]
+print(squirtle.is_caught)  # Should print False
 
 # Example Output:
 # {'name': 'Squirtle', 'types': ['water'], 'is_caught': False}

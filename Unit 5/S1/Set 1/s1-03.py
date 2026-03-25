@@ -23,6 +23,9 @@ squirtle = Pokemon("Squirtle", ["Water"])
 squirtle.print_pokemon()
 
 # Update is_caught here
+if squirtle.name == "Squirtle":
+    squirtle.is_caught = True
+
 # squirtle.??? = ???
 
 squirtle.print_pokemon()

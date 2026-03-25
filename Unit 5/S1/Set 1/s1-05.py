@@ -24,7 +24,10 @@ class Pokemon:
         self.is_caught = True
 
     def choose(self):
-        pass
+        if self.is_caught:
+            print(f"{self.name} I choose you!")
+        else:
+            print(f"{self.name} is wild! Catch them if you can!")
 
 
 my_pokemon = Pokemon("rattata", ["Normal"])

@@ -15,7 +15,8 @@ node_one = Node("a")
 node_two = Node("b")
 
 # Link the nodes here
-# node_one.next = ???
+node_one.next = node_two
+
 
 print(node_one.value)
 print(node_one.next.value)

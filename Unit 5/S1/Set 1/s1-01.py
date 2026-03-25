@@ -15,7 +15,10 @@ class Pokemon:
 
 
 # Instantiate my_pokemon here
-my_pokemon = None  # Replace with your code
+my_pokemon = Pokemon("Pikachu", ["Electric"])  # Replace with your code
+
+print(my_pokemon.name)  # Should print "Pikachu"
+print(my_pokemon.types)  # Should print ["Electric"]
 
 # Example Output: my_pokemon.name should be "Pikachu", my_pokemon.types should be ["Electric"]
 #

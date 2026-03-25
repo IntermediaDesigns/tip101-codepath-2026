@@ -28,7 +28,7 @@ class Pokemon:
             print(f"{self.name} is wild! Catch them if you can!")
 
     def add_type(self, new_type):
-        pass
+        self.types.append(new_type)
 
 
 jigglypuff = Pokemon("Jigglypuff", ["Normal"])

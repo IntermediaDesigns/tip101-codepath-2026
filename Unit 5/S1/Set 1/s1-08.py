@@ -23,7 +23,12 @@ class Pokemon:
 
 
 def get_evolutionary_line(starter_pokemon):
-    pass
+    evolutionary_line = []
+    current_pokemon = starter_pokemon
+    while current_pokemon is not None:
+        evolutionary_line.append(current_pokemon.name)
+        current_pokemon = current_pokemon.evolution
+    return evolutionary_line
 
 
 charizard = Pokemon("Charizard", ["fire", "flying"])

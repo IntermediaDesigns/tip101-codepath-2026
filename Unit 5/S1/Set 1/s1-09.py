@@ -14,8 +14,8 @@ class Node:
 
 
 # Create your nodes here
-node_one = None  # Replace with your code
-node_two = None  # Replace with your code
+node_one = Node("a")  # Replace with your code
+node_two = Node("b")  # Replace with your code
 
 print(node_one.value)
 print(node_one.next)
