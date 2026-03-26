@@ -24,8 +24,10 @@ bulbasaur = Pokemon("Bulbasaur", 45, 30)
 pikachu.attack(bulbasaur)
 bulbasaur.attack(pikachu)
 
+
+
 # Example Output:
 # Pikachu dealt 20 damage to Bulbasaur
-# Pikachu fainted
+# Bulbasaur dealt 30 damage to Pikachu
 #
 # ------------------------------------------------
