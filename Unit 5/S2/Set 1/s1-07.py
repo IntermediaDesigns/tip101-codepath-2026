@@ -15,7 +15,26 @@ class Node:
 
 
 def ll_insert(head, val, i):
-    pass
+    new_node = Node(val)
+
+    if i == 0:
+        new_node.next = head
+        return new_node
+
+    current = head
+    index = 0
+
+    while current is not None and index < i - 1:
+        current = current.next
+        index += 1
+
+    if current is None:
+        return head
+
+    new_node.next = current.next
+    current.next = new_node
+
+    return head
 
 
 def to_string(head):

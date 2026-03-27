@@ -14,7 +14,14 @@ class Node:
 
 
 def listify_first_n(head, n):
-    pass
+    result = []
+    current = head
+
+    while current is not None and len(result) < n:
+        result.append(current.value)
+        current = current.next
+
+    return result
 
 
 # Build: a -> b -> c

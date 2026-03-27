@@ -14,8 +14,10 @@ class Node:
 
 
 def get_tail(head):
-    pass
-
+    curr = head
+    while curr.next:
+        curr = curr.next
+    return curr.value
 
 # Build: num1 -> num2 -> num3
 num3 = Node("num3")

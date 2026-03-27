@@ -14,7 +14,8 @@ class Node:
 
 
 def add_first(head, new_node):
-    pass
+    new_node.next = head 
+    return new_node
 
 
 # Build linked list: Jigglypuff -> Wigglytuff
@@ -33,3 +34,5 @@ print(node_1.value, "->", node_1.next.value)
 # Ditto -> Jigglypuff
 #
 # ------------------------------------------------
+
+ 

@@ -12,7 +12,11 @@ class Node:
 
 
 def ll_replace(head, original, replacement):
-    pass
+    current = head 
+    while current is not None:
+        if current.value ==original:
+            current.value = replacement
+        current = current.next
 
 
 def to_string(head):

@@ -15,15 +15,18 @@ class Pokemon:
         self.damage = damage  # damage this pokemon does to its opponent
 
     def attack(self, opponent):
-        pass
-
+        opponent.hp -= self.damage
+        if opponent.hp <= 0:
+            opponent.hp = 0
+            print(f"{opponent.name} fainted")
+        else:
+            print(f"{self.name} dealt {self.damage} damage to {opponent.name}")
 
 pikachu = Pokemon("Pikachu", 35, 20)
 bulbasaur = Pokemon("Bulbasaur", 45, 30)
 
 pikachu.attack(bulbasaur)
 bulbasaur.attack(pikachu)
-
 
 
 # Example Output:

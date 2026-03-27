@@ -13,8 +13,8 @@ class Node:
 
 
 # Create your linked list here
-node_1 = None  # Replace with your code
-node_2 = None  # Replace with your code
+node_1 = Node("Jigglypuff", node_2)  # Replace with your code
+node_2 = Node("Wigglytuff")  # Replace with your code
 
 print(node_1.value, "->", node_1.next.value)
 print(node_2.value, "->", node_2.next)
