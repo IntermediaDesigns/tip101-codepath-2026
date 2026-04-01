@@ -13,7 +13,16 @@ class Node:
 
 
 def reverse(head):
-    pass
+    prev = None
+    current = head
+
+    while current:
+        next_node = current.next  # Store the next node
+        current.next = prev       # Reverse the link
+        prev = current            # Move prev to current
+        current = next_node       # Move to the next node
+
+    return prev  # 'prev' is the new head of the reversed list
 
 
 def to_string(head):

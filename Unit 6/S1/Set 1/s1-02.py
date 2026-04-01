@@ -13,7 +13,15 @@ class Node:
 
 
 def count_element(head, val):
-    pass
+    count = 0
+    current = head
+
+    while current is not None:
+        if current.value == val:
+            count += 1
+        current = current.next
+
+    return count
 
 
 # Build: 3 -> 1 -> 2 -> 1

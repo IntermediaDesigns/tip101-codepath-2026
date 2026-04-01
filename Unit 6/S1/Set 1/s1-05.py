@@ -13,7 +13,35 @@ class Node:
 
 
 def is_palindrome(head):
-    pass
+    # Step 1: Find the middle of the linked list using slow-fast pointer technique
+    slow = head
+    fast = head
+
+    while fast and fast.next:
+        slow = slow.next
+        fast = fast.next.next
+
+    # Step 2: Reverse the second half of the linked list
+    prev = None
+    current = slow
+
+    while current:
+        next_node = current.next
+        current.next = prev
+        prev = current
+        current = next_node
+
+    # Step 3: Compare the first half and the reversed second half
+    left = head
+    right = prev  # 'prev' is now the head of the reversed second half
+
+    while right:  # Only need to compare until 'right' is exhausted
+        if left.value != right.value:
+            return False
+        left = left.next
+        right = right.next
+
+    return True
 
 
 # Build: 1 -> 2 -> 1

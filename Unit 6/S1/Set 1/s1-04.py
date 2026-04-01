@@ -17,7 +17,14 @@ class Node:
 
 
 def find_middle_element(head):
-    pass
+    slow = head
+    fast = head
+
+    while fast and fast.next:
+        slow = slow.next
+        fast = fast.next.next
+
+    return slow
 
 
 # Build: 1 -> 2 -> 3

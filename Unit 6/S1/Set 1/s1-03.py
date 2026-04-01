@@ -29,7 +29,7 @@ def remove_tail(head):
         return None
     # Start from the head and find the second-to-last node
     current = head
-    while current.next:
+    while current.next.next:
         current = current.next
     current.next = None       # Remove the last node by setting second-to-last node to None
     return head
@@ -43,7 +43,7 @@ n1 = Node(1, n2)
 
 print("Before:")
 print_list(n1)
-result = remove_tail(n1)
+result = remove_tail(n1)  # Attempt to remove tail (4)
 print("After:")
 print_list(result)
 

@@ -13,7 +13,8 @@ class Node:
 
 
 # Create the linked list 4 -> 3 -> 2 in a single line here
-head = None  # Replace with your nested constructor call
+head = Node(4, Node(3, Node(2)))
+# Replace with your nested constructor call
 
 # Verify:
 print(head.value, "->", head.next.value, "->", head.next.next.value)
