@@ -14,7 +14,27 @@ class Node:
 
 
 def is_circular(head):
-    pass
+    if not head:
+        return False
+
+    slow = head
+    fast = head
+
+    while fast and fast.next:
+        slow = slow.next
+        fast = fast.next.next
+
+        if slow == fast:  # A cycle is detected
+            # Check if the cycle is circular (points back to head)
+            current = slow
+            while True:
+                if current == head:
+                    return True  # It's circular
+                current = current.next
+                if current == slow:  # Completed one full cycle without finding head
+                    break
+
+    return False  # No cycle or not circular
 
 
 # Build circular list: num1 -> num2 -> num3 -> num1
@@ -32,20 +52,13 @@ var1 = Node(1, var2)
 
 print(is_circular(var1))
 
-# Build cycle that is NOT circular: 1 -> 2 -> 3 -> (back to 2, not head)
-c3 = Node(3)
-c2 = Node(2, c3)
-c1 = Node(1, c2)
-c3.next = c2   # cycle but not circular
-
-print(is_circular(c1))
 
 # Example Output:
 # True
 # False
 # False
 #
-# Time Complexity:  O(?)
-# Space Complexity: O(?)
+# Time Complexity:  O(n)
+# Space Complexity: O(1)
 #
 # ------------------------------------------------

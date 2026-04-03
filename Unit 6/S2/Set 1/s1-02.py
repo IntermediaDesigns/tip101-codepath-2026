@@ -14,7 +14,29 @@ class Node:
 
 
 def find_last_node_in_cycle(head):
-    pass
+    if not head:
+        return None
+
+    slow = head
+    fast = head
+
+    # Step 1: Detect cycle using Floyd's Tortoise and Hare algorithm
+    while fast and fast.next:
+        slow = slow.next
+        fast = fast.next.next
+
+        if slow == fast:  # Cycle detected
+            # Step 2: Find the last node in the cycle
+            current = slow
+            while True:
+                if current.next == slow:  # Found the last node in the cycle
+                    return current
+                current = current.next
+                if current == slow:  # Completed one full cycle without finding last node
+                    break
+
+    return None  # No cycle detected
+
 
 
 # Build: num1 -> num2 -> num3 -> num4 -> (back to num2)
