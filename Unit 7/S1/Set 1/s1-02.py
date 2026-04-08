@@ -10,7 +10,14 @@
 
 
 def factorial(n):
-    pass
+    factorial_value = 1
+    for i in range(1, n + 1):
+        factorial_value *= i
+    return factorial_value
+
+
+print(factorial(5))
+
 
 
 # Example Input: 5

@@ -9,7 +9,12 @@
 
 
 def is_power_of_two(n):
-    pass
+    if n <= 0:
+        return False
+    elif n == 1:
+        return True
+    else:
+        return is_power_of_two(n // 2)
 
 
 print(is_power_of_two(16))

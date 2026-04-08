@@ -9,7 +9,23 @@
 
 
 def find_last(lst, target):
-    pass
+    left, right = 0, len(lst) - 1
+    last_occurrence = -1
+
+    while left <= right:
+        mid = (left + right) // 2
+
+        if lst[mid] == target:
+            last_occurrence = mid
+            left = mid + 1  # Continue searching in the right half
+        elif lst[mid] < target:
+            left = mid + 1
+        else:
+            right = mid - 1
+
+    return last_occurrence
+
+print(find_last([1, 3, 5, 7, 9, 11, 11, 13, 15], 11))
 
 
 # Example Input: lst = [1, 3, 5, 7, 9, 11, 11, 13, 15], target = 11
