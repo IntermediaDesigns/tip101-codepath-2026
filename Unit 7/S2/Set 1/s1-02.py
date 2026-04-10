@@ -6,7 +6,21 @@
 
 
 def count_ones(lst):
-    pass
+    left, right = 0, len(lst) - 1
+    count = 0
+
+    while left <= right:
+        mid = (left + right) // 2
+
+        if lst[mid] == 1:
+            count += (right - mid + 1)
+            right = mid - 1
+        else:
+            left = mid + 1
+
+    return count
+
+print(count_ones([0, 0, 0, 0, 1, 1, 1]))
 
 
 # Example Input: [0, 0, 0, 0, 1, 1, 1]

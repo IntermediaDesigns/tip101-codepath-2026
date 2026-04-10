@@ -10,10 +10,21 @@
 
 
 def is_nested(s):
-    pass
+    if s == "":
+        return True
+    elif len(s) % 2 != 0:
+        return False
+    elif s[0] == "(" and s[-1] == ")":
+        return is_nested(s[1:-1])
+    else:
+        return False
+
+
+print(is_nested("(())"))
 
 
 # Example Input: "(())"
 # Example Output: True
-#
+# Time Complexity: O(n) where n is the length of the input string. We need to check each character in the string once.
+# Space Complexity: O(n) in the worst case due to the recursive call stack. In the best case (when the string is empty), the space complexity is O(1).
 # ------------------------------------------------
