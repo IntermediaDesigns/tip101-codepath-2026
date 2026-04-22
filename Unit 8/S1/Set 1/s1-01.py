@@ -18,6 +18,11 @@ class TreeNode:
 
 
 # Build the tree here:
-root = None  # Replace with your implementation
+root = None
+
+tree = TreeNode(10, TreeNode(4), TreeNode(6))
+print(tree.val)
+print(tree.left.val)
+print(tree.right.val)
 
 # ------------------------------------------------

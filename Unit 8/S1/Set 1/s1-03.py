@@ -16,7 +16,41 @@ class TreeNode:
 
 
 def check_tree(root):
-    pass
+    
+    if root == None:
+        return False
+    sum = 0
+    if root.left != None:
+        sum += root.left.val
+    if root.right != None:
+        sum += root.right.val
+
+    if sum == root.val:
+        return True
+    else:
+        return False
+    
+
+'''
+U: Compare the values of any existing children to root value, return true if equal.
+    False otherwise.
+
+P:
+'''
+
+tree = TreeNode(10, TreeNode(10))
+print(check_tree(tree))
+
+
+tree2 = TreeNode(10, TreeNode(3), TreeNode(2))
+print(check_tree(tree2))
+
+tree3 = TreeNode(10, TreeNode(2))
+print(check_tree(tree3))
+
+tree4 = None
+print(check_tree(tree4))
+
 
 
 # Example Input Tree #1:

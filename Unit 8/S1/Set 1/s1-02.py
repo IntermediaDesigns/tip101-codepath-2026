@@ -16,9 +16,25 @@ class TreeNode:
 
 
 def check_tree(root):
-    pass
+    if (root.left.val + root.right.val) == root.val:
+        return True
+    else:
+        return False
 
 
+
+tree = TreeNode(10, TreeNode(4), TreeNode(6))
+print(check_tree(tree))
+
+'''
+U: Add the values of the children in a tree with exactly 3 nodes.
+    return true if equal to root value, false otherwise
+
+P: Create an if statement to see if the 2 children add to the root value
+   if the sum is the same as root, return true
+   else, return false
+
+'''
 # Example Input Tree #1:
 #      10
 #     /  \

@@ -15,8 +15,34 @@ class TreeNode:
 
 
 def left_most(root):
-    pass
+    if root == None:
+        return None
 
+    current = root
+
+    while current.left != None:
+        current = current.left
+    return current.val
+
+root = TreeNode(1, TreeNode(2), TreeNode(5))
+root.left.left = TreeNode(4)
+root.left.right = TreeNode(3)
+
+print(left_most(root))
+
+root = TreeNode(1, None, TreeNode(2))
+root.right.left = TreeNode(3)
+print(left_most(root))
+
+rot = None
+print(left_most(rot))
+
+'''
+U: Return the value of the node most left in a tree
+
+P: while a left node isn't None, move left
+    return final node.val
+'''
 
 # Example Input Tree #1:
 #        1
