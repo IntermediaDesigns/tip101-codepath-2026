@@ -14,9 +14,45 @@ class TreeNode:
         self.left = left
         self.right = right
 
+        def is_univalued(self):
+            if self is None:
+                return True
 
-def is_univalued(root):
-    pass
+            if self.left is not None:
+                if self.left.val != self.val:
+                    return False
+                if self.left.is_univalued() == False:
+                    return False
+
+            if self.right is not None:
+                if self.right.val != self.val:
+                    return False
+                if self.right.is_univalued() == False:
+                    return False
+
+            return True
+    # def is_univalued(root):
+    #     if root == None:
+    #         return None
+    #     if root.val == root:
+    #         return True
+    #     return is_univalued(root.left)
+    #     return is_univalued(root.right)
+
+        def printTree(root):
+            if root == None:
+                return None
+            printTree(root.left)
+            print(root.val)
+            printTree(root.right)
+
+root = TreeNode(1)
+root.left = TreeNode(1)
+root.right = TreeNode(1)
+root.left.left = TreeNode(1)
+
+printTree(root)
+is_univalued(root)
 
 
 # Example Input Tree #1:

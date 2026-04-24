@@ -15,8 +15,26 @@ class TreeNode:
 
 
 def height(root):
-    pass
+    if root is None:
+        return 0
 
+    # h = 0
+
+    # if root.left:
+    #     h+= height(root.left)
+    # else:
+    #     h += 1
+
+    # if root.right:
+    #     h+= height(root.right)
+    # else:
+    #     h+= 1
+
+    # return h
+    return 1 + max(height(root.left), height(root.right))
+
+tree1 = TreeNode(4, TreeNode(2, TreeNode(1), TreeNode(3)), TreeNode(5))
+print(height(tree1))
 
 # Example Input Tree #1:
 #        4
