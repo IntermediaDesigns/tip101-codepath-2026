@@ -19,6 +19,11 @@ class TreeNode:
 
 
 # Build the tree here:
-root = None  # Replace with your implementation
+root = TreeNode(5)  # Replace with your implementation
+node_left = TreeNode(10)
+node_right = TreeNode(20)
+
+root.left = node_left
+root.right = node_right
 
 # ------------------------------------------------

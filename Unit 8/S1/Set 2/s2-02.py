@@ -16,9 +16,19 @@ class TreeNode:
 
 
 def check_tree(root):
-    pass
+    if root.left.val * root.right.val == root.val:
+        return True
+    else:
+        return False
 
+root = TreeNode(10)  # Replace with your implementation
+node_left = TreeNode(2)
+node_right = TreeNode(5)
 
+root.left = node_left
+root.right = node_right
+
+print(check_tree(root))
 # Example Input Tree #1:
 #      10
 #     /  \

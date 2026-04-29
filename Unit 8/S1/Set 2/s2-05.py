@@ -15,7 +15,12 @@ class TreeNode:
 
 
 def right_most(root):
-    pass
+    # base case
+    if root.right.val == None:
+        return root.val    
+    
+    # recursive case
+    return right_most(root.right.val)
 
 
 # Example Input Tree #1:
@@ -33,7 +38,13 @@ def right_most(root):
 #     /
 #    3
 # Input: root = 1 -> Expected Output: 2
+root = TreeNode(1)
+node1 = TreeNode(2)
+node2 = TreeNode(3)
+root.right = node1
+node1.left = node2
 
+print(right_most(root))
 # Input: root = None -> Output: None
 #
 # ------------------------------------------------
